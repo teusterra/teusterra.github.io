@@ -1,0 +1,56 @@
+baseURL = 'https://teusterra.github.io/'
+locale = 'pt-br'
+title = 'teusterra'
+theme = 'PaperMod'
+author = 'Mateus Terra'
+enableRobotsTXT = true
+
+[params]
+  contentTypeName = "posts"
+  
+  [params.header]
+    logo = "logo.jpg"
+    
+  [params.footer]
+    since = 2023
+    poweredby = true
+
+[[menu.main]]
+  identifier = "Home"
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "post"
+  name = "Posts"
+  pageRef = "/posts/"
+  weight = 0
+
+[[menu.main]]
+  identifier = "search"
+  name = "Pesquisa"
+  pageRef = "/search/"
+  weight = 5
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
