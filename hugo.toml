@@ -5,6 +5,18 @@ theme = 'PaperMod'
 author = 'Mateus Terra'
 enableRobotsTXT = true
 
+[params.homeInfoParams]
+  Title = "Hi there wave"
+  Content = "Can be Info, links, about..."
+
+[[params.socialIcons]]
+  name = "<platform>"
+  url = "<link>"
+
+[[params.socialIcons]]
+  name = "<platform 2>"
+  url = "<link2>"
+
 [params]
   contentTypeName = "posts"
   
@@ -19,19 +31,19 @@ enableRobotsTXT = true
   identifier = "Home"
   name = "Home"
   pageRef = "/"
-  weight = 10
+  weight = 4
 
 [[menu.main]]
   identifier = "post"
   name = "Posts"
   pageRef = "/posts/"
-  weight = 0
+  weight = 5
 
 [[menu.main]]
   identifier = "search"
   name = "Pesquisa"
   pageRef = "/search/"
-  weight = 5
+  weight = 6
 
 [taxonomies]
   category = "categories"
@@ -55,7 +67,7 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
   priority = 0.5
 
-security:
+[security]
   hsts = true
   xssProtection = true
   contentTypeOptions = "nosniff"
