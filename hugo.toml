@@ -54,3 +54,9 @@ enableRobotsTXT = true
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
+
+security:
+  hsts = true
+  xssProtection = true
+  contentTypeOptions = "nosniff"
+  referrerPolicy = "strict-origin-when-cross-origin"
