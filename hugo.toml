@@ -6,8 +6,8 @@ author = 'Mateus Terra'
 enableRobotsTXT = true
 
 [params.homeInfoParams]
-  Title = "Hi there wave"
-  Content = "Can be Info, links, about..."
+  Title = "Oi 🐦‍⬛"
+  Content = "Teste de sobre"
 
 [[params.socialIcons]]
   name = "<platform>"
